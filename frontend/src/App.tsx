@@ -1,24 +1,19 @@
-import { useState, useMemo } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { useState } from 'react';
+import { motion } from 'framer-motion';
 import { 
   ArrowDownUp, 
   Settings, 
   Info, 
   ChevronDown, 
   ExternalLink, 
-  Search,
   Zap,
   Shield,
   BarChart3
 } from 'lucide-react';
 
-// Solana Imports (Mocked UI behavior for now)
-// In a real app, these would wrap the whole project
-// For now we'll simulate the look and feel
-
 const App = () => {
   const [fromAmount, setFromAmount] = useState('10');
-  const [toAmount, setToAmount] = useState('142.52');
+  const toAmount = '142.52';
   const [isSwapping, setIsSwapping] = useState(false);
 
   const handleSwap = () => {

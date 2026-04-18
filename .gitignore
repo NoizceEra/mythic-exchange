@@ -9,3 +9,5 @@ config
 .vscode
 profile.json
 *.lz4
+
+.vercel
